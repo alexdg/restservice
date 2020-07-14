@@ -1,19 +1,14 @@
 package com.cligest.restservice;
 
 
-
-import org.springframework.boot.autoconfigure.quartz.QuartzProperties;
-
 import javax.naming.Context;
 import javax.naming.InitialContext;
-import javax.naming.NamingException;
 import javax.sql.*;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.logging.Logger;
+
 
 public class DatabaseStuff {
 
@@ -44,7 +39,8 @@ public class DatabaseStuff {
             validateVars(entidade, data);
 
             //todo escape char \\ on result string
-            String query = "Select fe.[Nº de Processo] from FE where fe.[ID entidade]=" + entidade + " and Data='" + data + "'";
+            String query = "Select fe.[Nº de Processo] from FE where fe.[ID entidade]=" + entidade + " and Data='" + data +
+                    "' order by [Nº de Processo] ASC";
 
             Statement statement = dbCon.createStatement();
             ResultSet rs = statement.executeQuery(query);
