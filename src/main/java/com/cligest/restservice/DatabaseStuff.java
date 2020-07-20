@@ -7,6 +7,7 @@ import javax.sql.*;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 
 
@@ -59,7 +60,6 @@ public class DatabaseStuff {
             }
             rs.close();
             statement.close();
-            dbCon.close();
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }
@@ -73,6 +73,14 @@ public class DatabaseStuff {
         }
         if ((entidade != INSURANCE_BIC_SEGUROS) && (entidade != INSURANCE_GLOBAL_SEGUROS)) {
             throw new Exception("Input vars validation failed: Unauthorized insurance id.");
+        }
+    }
+
+    public void close() throws Exception {
+        try {
+            dbCon.close();
+        } catch (SQLException e) {
+            throw new Exception(e.getMessage());
         }
     }
 
