@@ -57,6 +57,9 @@ public class DatabaseStuff {
                 result[count] = rs.getString(1);
                 count++;
             }
+            rs.close();
+            statement.close();
+            dbCon.close();
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }
