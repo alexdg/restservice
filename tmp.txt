@@ -1,0 +1,11 @@
+
+
+
+Segue as especificações dos campos a serem preenchidos automaticamente pelo Web-Server:
+
+- SQL Server - DB CligestSI - Tabela [FE] - Campo [Autorização] - Type Char 50 - Deve ser colocado o Número de Cartão de Beneficiário (Número de Segurado) -
+- SQL Server - DB CligestSI - Tabela [Registo FE] - Campo [Elegibilidade] - Type Long Integer - Deve ser colocado o Número de Elegibilidade
+- SQL Server - DB CligestSI - Tabela [Registo FE] - Campo [DataElegibilidade] - Type Date - Deve ser colocado a data que foi solicitada a Elegibilidade
+- SQL Server - DB CligestSI - Tabela [Registo FE] - Campo [Operador] - Type Char 100 - Deve ser colocado o Nome do Operador que gerou a Elegibilidade
+
+Para o primeiro caso é fácil carregar o número de cartão com base no número de processo, para os outros, tem que ser corrido um comando que compare os registos antes de ser carregada a respectiva eligibilidade.

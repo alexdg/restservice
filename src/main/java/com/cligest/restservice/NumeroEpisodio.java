@@ -13,14 +13,12 @@ public class NumeroEpisodio {
     public String[] getEntidades() {
         String[] result = null;
         try {
-            DatabaseStuff dbstuff = new DatabaseStuff();
-            result = dbstuff.getNumeroProcesso(entidade,data);
-            dbstuff.close();
+            DatabaseLib dblib = new DatabaseLib();
+            result = dblib.getNumeroProcesso(entidade,data);
+            dblib.close();
         } catch (Exception e) {
             System.err.println("NumeroEpisodio.getEntidades: Exception" + e.getMessage());
         }
         return result;
     }
-
-
 }

@@ -9,9 +9,12 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 
-public class DatabaseStuff {
+public class DatabaseLib {
 
     public static final int INSURANCE_BIC_SEGUROS = 416;
     public static final int INSURANCE_GLOBAL_SEGUROS = 415;
@@ -20,7 +23,9 @@ public class DatabaseStuff {
     private DataSource ds;
     private Connection dbCon;
 
-    public DatabaseStuff() throws Exception {
+    private static List<String> memIIsList = new ArrayList<String>();
+
+    public DatabaseLib() throws Exception {
         try {
             initContext = new InitialContext();
             Context webContext = (Context) initContext.lookup("java:/comp/env");
@@ -30,6 +35,17 @@ public class DatabaseStuff {
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }
+    }
+
+    public static void addMemIDtoList(String memID) {
+        memIIsList.add(memID);
+    }
+
+    public static String[] getMemIDs() {
+        String[] result = new String[memIIsList.size()];
+        result = memIIsList.toArray(result);
+        Arrays.sort(result);
+        return result;
     }
 
     public String[] getNumeroProcesso(long entidade, String data) throws Exception {
