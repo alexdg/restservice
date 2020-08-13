@@ -19,11 +19,11 @@ public class Fe2Ne {
     public String[] getResult() {
         String[] result = null;
         try {
-            DatabaseLib dblib = new DatabaseLib();
+            //DatabaseLib dblib = new DatabaseLib();
 
             // find
 
-            dblib.close();
+            //dblib.close();
         } catch (Exception e) {
             System.err.println("Fe2Ne.getResult: Exception" + e.getMessage());
         }

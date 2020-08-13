@@ -9,8 +9,9 @@ public class CligestRestController {
 
     @GetMapping("/numeroepisodio")
     public NumeroEpisodio numeroEpisodio(@RequestParam(value = "entidade", defaultValue = "415") long entidade,
-                                         @RequestParam(value = "data", defaultValue = "2020-05-25") String data) {
-        return new NumeroEpisodio(entidade, data);
+                                         @RequestParam(value = "data", defaultValue = "2020-05-25") String data,
+                                         @RequestParam(value = "morada", defaultValue = "") String morada) {
+        return new NumeroEpisodio(entidade, data, morada);
     }
 
     @GetMapping("/fe2ne")
@@ -23,8 +24,7 @@ public class CligestRestController {
     }
 
     @GetMapping("/memidreader")
-    public MemIDReader memIDReader(@RequestParam(value = "memid", defaultValue = "0") String memid)
-                       {
+    public MemIDReader memIDReader(@RequestParam(value = "memid", defaultValue = "0") String memid) {
         return new MemIDReader(memid);
     }
 }

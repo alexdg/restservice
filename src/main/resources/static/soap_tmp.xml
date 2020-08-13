@@ -1,0 +1,3578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns:sch="http://pt.advancecare.awsp.eligibilityAO"
+               xmlns:tns="http://pt.advancecare.awsp.eligibilityAO">
+    <soap:Header>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+                       xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsu:Timestamp wsu:Id="Timestamp-2020-08-05T11:08:40Z">
+                <wsu:Created>2020-08-05T11:08:40Z</wsu:Created>
+                <wsu:Expires>2020-08-05T11:18:40Z</wsu:Expires>
+            </wsu:Timestamp>
+            <wsse:UsernameToken
+                    xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+                    wsu:Id="SecurityToken-2020-08-05T11:08:40Z">
+                <wsse:Username>AVA0506</wsse:Username>
+                <wsse:Password
+                        Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">
+                    10Q6n22q
+                </wsse:Password>
+                <wsu:Created>2020-08-05T11:08:40Z</wsu:Created>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soap:Header>
+    <soap:Body>
+        <tns:performSingleActRequest>
+            <SingleActParametersTO_1>
+                <dos>2020-08-05T11:07:48.662Z</dos>
+                <memID>12</memID>
+                <buID>BIC</buID>
+                <currencyCode>AOA</currencyCode>
+                <practiceSeq>3</practiceSeq>
+                <providerID>D180</providerID>
+                <specialtyNbr>662</specialtyNbr>
+                <icd9Codes>
+                    <diagCode>E947</diagCode>
+                </icd9Codes>
+                <eligibilityServiceValues>
+                    <amtClaimed>500</amtClaimed>
+                    <procCode>98100001VC</procCode>
+                    <serviceCode>1</serviceCode>
+                    <unit>1</unit>
+                </eligibilityServiceValues>
+            </SingleActParametersTO_1>
+        </tns:performSingleActRequest>
+    </soap:Body>
+</soap:Envelope>
+
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+<SOAP-ENV:Header/>
+<SOAP-ENV:Body>
+    <ns3:performSingleActResponse xmlns:ns3="http://pt.advancecare.awsp.eligibilityAO">
+        <result>
+            <returnCode>0</returnCode>
+            <totalResults>1</totalResults>
+            <results>
+                <assistantName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <buName>BIC</buName>
+                <catCode>2</catCode>
+                <catName>Ambulat..rio</catName>
+                <clinicName>Rua Albano Machado, 29 e 31</clinicName>
+                <currencyCode>AOA</currencyCode>
+                <dos>2020-08-05T11:07:48.662Z</dos>
+                <elegibilityNbr>1112683397</elegibilityNbr>
+                <eligibilityServicesValuesReturn>
+                    <amtClaimed>500.0</amtClaimed>
+                    <anatomicRegion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <incidence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <laterality xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <load xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <procCode>98100001VC</procCode>
+                    <serviceCode>7301</serviceCode>
+                    <unit>1.0</unit>
+                    <aggravationRate>0</aggravationRate>
+                    <amtCopay>0.0</amtCopay>
+                    <amtPaid>500.0</amtPaid>
+                    <totalIva>0.0</totalIva>
+                </eligibilityServicesValuesReturn>
+                <icd9Codes>
+                    <diagCode>E947</diagCode>
+                </icd9Codes>
+                <memFullName>Cliente N..o Identificado</memFullName>
+                <memID>12</memID>
+                <payeeId>5401091079</payeeId>
+                <payeeToId>Cligest - Servi..os M..dicos - Farmac..uticos, Lda</payeeToId>
+                <practiceSeq>3</practiceSeq>
+                <providerID>D180</providerID>
+                <providerName>Cligest - Servi..os M..dicos - Farmac..uticos, Lda_D</providerName>
+                <specialtyDesc>Ambulat..rio Programado</specialtyDesc>
+                <totalAmtCopay>0.0</totalAmtCopay>
+                <totalAmtPaid>500.0</totalAmtPaid>
+                <totalPagoComIva>0.0</totalPagoComIva>
+                <userId>AVA0506</userId>
+                <memPhone xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <memEmail xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            </results>
+        </result>
+    </ns3:performSingleActResponse>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+<SOAP-ENV:Header/>
+<SOAP-ENV:Body>
+    <ns3:findProvidersResponse xmlns:ns3="http://pt.advancecare.awsp.eligibilityAO">
+        <result>
+            <returnCode>0</returnCode>
+            <totalResults>148</totalResults>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerID>975-A</providerID>
+                <providerName>Adalberto Rodriguez Garcia</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1776</providerID>
+                <providerName>Adelina Domingos de Tonde Tunga Campos</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>864-A</providerID>
+                <providerName>Aida Elena Garcia Dell Collado</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>9</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>8</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>10</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>132</providerID>
+                <providerName>Alberto Jorge Dos Santos Marques</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>520-A</providerID>
+                <providerName>Alexander  Rojas</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1343</providerID>
+                <providerName>Alexandre  Saúl</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>0945</providerID>
+                <providerName>Amélia da Glória Feliciano da Cruz</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>893</providerID>
+                <providerName>Ana Inacio Paixao da Silva</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>2852</providerID>
+                <providerName>Ana Maria António</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>999</providerID>
+                <providerName>Ana Maria Bento Lopes Teixeira</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>566</providerID>
+                <providerName>Ana Paula da Aparição L. da Silva Pereira</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>8</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>665</providerID>
+                <providerName>Ana Paula Dos Santos Quaresma Da Silva</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>888-A</providerID>
+                <providerName>Anabel Segovia Váquez</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>959-A</providerID>
+                <providerName>Anabela da Silva Reis</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>9</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>8</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>11</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>10</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>2045</providerID>
+                <providerName>António Martins Domingos Pitra</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerID>OM00196</providerID>
+                <providerName>Ariel Nunez Roca</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>2551</providerID>
+                <providerName>Bernarda  Morgado</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>114 - A</providerID>
+                <providerName>Bogdan  Lysunets</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>3260</providerID>
+                <providerName>Branca Joyce dos Santos Gonçalves Milagre</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>752</providerID>
+                <providerName>Brigida das Graças da Paixão Franco</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>3282</providerID>
+                <providerName>Carla  Nunes</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>8</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>110-A</providerID>
+                <providerName>Carmela  Pizarro</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>110 - A</providerID>
+                <providerName>Carmela Victoria Cotelle Pizarro</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>8</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>11</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>9</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>10</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>12</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1526</providerID>
+                <providerName>Carolina Joana Capingana</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>3649</providerID>
+                <providerName>Cecília Futi Mavungo</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerID>20086</providerID>
+                <providerName>Cecília Futi Mavungo</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1142</providerID>
+                <providerName>Celina Gomes de Sousa</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>8</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>2401</providerID>
+                <providerName>Claudio Lam Mbala</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>D180</providerID>
+                <providerName>Cligest - Serviços Médicos - Farmacêuticos, Lda_D</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1751</providerID>
+                <providerName>Conceição  Isabel</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>405-D/A</providerID>
+                <providerName>Cristobal Esteban Armenteros Castro</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>674-A</providerID>
+                <providerName>David Cateura Martinez</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>652-A</providerID>
+                <providerName>Dilu Sorzano Cesar</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>2033</providerID>
+                <providerName>Domingas Nicolau Pedro Diogo Morais</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>3410</providerID>
+                <providerName>Edmar Fernando Dias Coutinho</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerID>0M0640</providerID>
+                <providerName>Eliecer Sabino Rodriguez Sanchez</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>10</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>13</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>11</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>12</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>14</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>2634</providerID>
+                <providerName>Elisandra Manuela Caumba Dias Dos Santos</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>763</providerID>
+                <providerName>Elisete de Assunção Fernandes João</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>3770</providerID>
+                <providerName>Elsa Fernanda de Oiveira Cabral</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerID>876</providerID>
+                <providerName>Elsa Fernandes de Oliveira Cabral</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>194-A</providerID>
+                <providerName>Emma  Arnautova</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1658</providerID>
+                <providerName>Esperança Correia Manuel Silva</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>9</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>12</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>10</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>11</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>14</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>13</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1274</providerID>
+                <providerName>Eulália Maria Cardoso Simões Alexandre</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>2289</providerID>
+                <providerName>Eurico Sambango Sauíme</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerID>2125</providerID>
+                <providerName>Euridice Josefa dos Santos da Rosa Pacavira</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>45492</providerID>
+                <providerName>Evelise Henriques Ramos</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1781</providerID>
+                <providerName>Fátima Lacerda Correia Tavares Paitio</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1755</providerID>
+                <providerName>Feliciana da Conceição Francisco Kudissadila</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1015</providerID>
+                <providerName>Felismina Gomes Santos</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>679</providerID>
+                <providerName>Fernanda Lourdes Paulo</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1333</providerID>
+                <providerName>Fernando  Somangula</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>3045</providerID>
+                <providerName>Filipa Solange Telo Brunhoso</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>8</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1413</providerID>
+                <providerName>Filomena Belina Nunes Cachicolo Manuel</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>12</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>15</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>13</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>14</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>16</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>910</providerID>
+                <providerName>Francisco Cardoso dos Santos Neto</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>3559</providerID>
+                <providerName>Gabriel Vieira Joaquim</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>9</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>12</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>10</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>11</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>13</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>24-A</providerID>
+                <providerName>Galina Vasileva Georgieva Pires</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>112-A</providerID>
+                <providerName>Gilberto La Llave Leon</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>755-A</providerID>
+                <providerName>Gilda Vivianne Figueira Lopes da Silva Mariano</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>3103</providerID>
+                <providerName>Gilma Valéria Henriques Vicente Ferreira</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>45436</providerID>
+                <providerName>Gisela da Conceição Verissímo da Costa</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>3128</providerID>
+                <providerName>Gisela da Conceição Veríssomo da Costa</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>809</providerID>
+                <providerName>Graciete Lemos Cortez</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>2469</providerID>
+                <providerName>Hedson Alves Martins</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>3499</providerID>
+                <providerName>Helton de Oliveira Chapim</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>769-A</providerID>
+                <providerName>Hiram Tapenes Daumy</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>602-A</providerID>
+                <providerName>Hirondina da Conceição F. Langa Mondlane</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>214</providerID>
+                <providerName>Hortêncio Amilcar Estevão</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>3493</providerID>
+                <providerName>Inóspita do Amparo Augusto Coutinho</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerID>20038</providerID>
+                <providerName>Isidoro Bucla Cambuzina</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>8</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1098</providerID>
+                <providerName>Izuela  Simão</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>46</providerID>
+                <providerName>Jerry  Nichamal</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>4 - A</providerID>
+                <providerName>Jerzy Wojeciech Niekowal</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>3929</providerID>
+                <providerName>Jesus  Domingos</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>326</providerID>
+                <providerName>Joaquim Ukuessenje Isaac</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>2175</providerID>
+                <providerName>Joaquim Ukuessenje Issac</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1280</providerID>
+                <providerName>João Batista Casimiro Bernardo</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerID>99</providerID>
+                <providerName>João Carlos Duarte Pacheco Blasques de Oliveira</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>8</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1965</providerID>
+                <providerName>Jorge Chicapa Eduardo</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1334</providerID>
+                <providerName>Jorge José Júlio</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>8</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>11</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>10</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>9</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>12</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>50-A</providerID>
+                <providerName>José Antunes Gil Ferreira</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>17</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>20</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>18</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>19</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>21</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>233</providerID>
+                <providerName>José Cardoso Neto</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>759-A</providerID>
+                <providerName>José Diogo Tomás</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>10</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>13</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>11</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>12</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>14</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>2143</providerID>
+                <providerName>José Gonçalves Pereira Bravo</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1454/D-A</providerID>
+                <providerName>Juan Carlos Cabresa Suárez</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>815</providerID>
+                <providerName>Judith Inácio Domingos</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>8</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>9</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>2222</providerID>
+                <providerName>Judranka Patrícia Costa do Amaral Gourgel</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1128</providerID>
+                <providerName>Juliana da Graça Alvaro Vumi Miranda</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>2543</providerID>
+                <providerName>Julieta Manuel Carlos de Castro</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>673-A</providerID>
+                <providerName>Júnior Rodrigues Navia</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1604</providerID>
+                <providerName>Kajibanga Muchita Chicua</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>847-A</providerID>
+                <providerName>Liddys Loreta de Rojas Castaneda</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerID>121-d</providerID>
+                <providerName>Lisette Maria Morales Guinferrer</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>10</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>12</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>9</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>11</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>13</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1849</providerID>
+                <providerName>Love Joy Avelino Tati de Oliveira</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>8</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>601</providerID>
+                <providerName>Luisa Kamala Ribeiro</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1629-D/A</providerID>
+                <providerName>Luís Alberto Rojas Ampudia</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>2964</providerID>
+                <providerName>Luzia António Guimba</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>2830</providerID>
+                <providerName>Madalena Esperança Mavungo</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>9</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>8</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>10</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>703</providerID>
+                <providerName>Maria  Imaculada</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1321</providerID>
+                <providerName>Maria Joaquina de Sousa</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>9</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>12</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>10</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>11</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>14</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>13</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1791</providerID>
+                <providerName>Maria Luisa Manuel Mateus</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>8</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>9</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>470</providerID>
+                <providerName>Maria Madalena Paquisse</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>9</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>12</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>10</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>11</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>13</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>139</providerID>
+                <providerName>Maria Odete da Silva Marques</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>824</providerID>
+                <providerName>Maria Paula Alves da Rocha</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>718</providerID>
+                <providerName>Maria Soqui Manuel</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>936</providerID>
+                <providerName>Maria Victorina Luís António</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>825</providerID>
+                <providerName>Mariana Augusto Feliciano</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>8</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>9</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>78</providerID>
+                <providerName>Marília Ema de Palma Gomes</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerID>0M08100</providerID>
+                <providerName>Marta  Cajiza</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>8</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>9</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>486-A</providerID>
+                <providerName>Marthe  Sorry</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>3347</providerID>
+                <providerName>Maura Uget Victor Madeira Rosa</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>681-A</providerID>
+                <providerName>Mário Rui Neto Fernandes</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerID>OMA773-A</providerID>
+                <providerName>MEYCHEL  SILVA</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>13</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>16</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>14</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>15</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>17</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>M001</providerID>
+                <providerName>Médico Prescritor Externo</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1959</providerID>
+                <providerName>Miguel  Sebastião</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>2196</providerID>
+                <providerName>Miquilina Manuel Sachimuma</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>175-C</providerID>
+                <providerName>Nataliya  Melnychenko</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>343</providerID>
+                <providerName>Nice Naire Barata Sampaio da Rocha</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>5358</providerID>
+                <providerName>Nkanga  Emanuel</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>870-A</providerID>
+                <providerName>Noris Catarina Garcia Rodriguez</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>2263</providerID>
+                <providerName>Nsimba Mvuandulo Janete</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>4586</providerID>
+                <providerName>Olinda Isabel Lopes Capemba</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>937</providerID>
+                <providerName>Onassis Naiol Francisco da Silva</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>9</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>12</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>10</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>11</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>13</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>616</providerID>
+                <providerName>Ondina Da Cruz Gonçalves Cardoso</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>56</providerID>
+                <providerName>Oscar Rui Videira</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>3575</providerID>
+                <providerName>Pedro Alexandre da Silva Reais</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1011</providerID>
+                <providerName>Raciel Negrín Del Pino</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>10</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>8</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>9</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>11</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>527-A</providerID>
+                <providerName>Rafael Negrin La Rosa</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>217-A</providerID>
+                <providerName>Ramon Antonio Florez Acuna</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>9669-A</providerID>
+                <providerName>Randys La Llave Maynard</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>10</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>8</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>9</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>11</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>844</providerID>
+                <providerName>Rosaria dos Anjos Januario e Silva Monimambo</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>8</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>9</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>622</providerID>
+                <providerName>Sebastiana Adolfo Gamboa</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>0021-A</providerID>
+                <providerName>Sergiy  Tkanchenko</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerID>0182-A</providerID>
+                <providerName>Sérgio  Delgado</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>182 - A</providerID>
+                <providerName>Sérgio Delgado Travieso</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>707</providerID>
+                <providerName>Sidney  Inelio</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>8</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>11</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>9</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>10</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>12</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>501-A</providerID>
+                <providerName>Sivakov Pavel Victorovitch</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1695</providerID>
+                <providerName>Teresa  Candieiro</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>663-A</providerID>
+                <providerName>Teresa Maria Martins Rodrigues</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>331</providerID>
+                <providerName>Teresinha Juliana Branco Baptista</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>7</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>65-A</providerID>
+                <providerName>Tkachenko Olena Andreevna</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>8</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>11</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>9</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>10</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>12</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>702</providerID>
+                <providerName>Vanda Marina da Silva Cardoso Van-Dunem</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1633</providerID>
+                <providerName>Verónica Alfredo Germano</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1405</providerID>
+                <providerName>Verónica Augusto Miti</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>3399</providerID>
+                <providerName>Victor Manuel Barata Leite</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>9</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>12</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>10</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>11</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>13</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1829</providerID>
+                <providerName>Wanda Eunice Gaspar Marinho</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>13</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>16</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>14</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>15</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>17</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>606-A</providerID>
+                <providerName>Yoan Gutierrez Perez</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>1</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>79441</providerID>
+                <providerName>Yoel Valle Alonso</providerName>
+            </results>
+            <results>
+                <providerAddresses>
+                    <practiceSeq>2</practiceSeq>
+                    <providerAddress>Rua Albano Machado, 29 e 31</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>5</practiceSeq>
+                    <providerAddress>Municipio de Viana Bairro Mundimba Zango O</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>3</practiceSeq>
+                    <providerAddress>Rua António Brissac, 12 Edif. C -Sub-Cave</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>4</practiceSeq>
+                    <providerAddress>Municipio de Viana Q. D. 18 Projecto Morar N.7</providerAddress>
+                </providerAddresses>
+                <providerAddresses>
+                    <practiceSeq>6</practiceSeq>
+                    <providerAddress>Municipo do Dande Rua C Casa 356 Sector 2</providerAddress>
+                </providerAddresses>
+                <providerID>1972</providerID>
+                <providerName>Yolanda Torres Dellis</providerName>
+            </results>
+        </result>
+    </ns3:findProvidersResponse>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

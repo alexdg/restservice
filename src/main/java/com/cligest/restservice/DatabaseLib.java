@@ -19,18 +19,23 @@ public class DatabaseLib {
     public static final int INSURANCE_BIC_SEGUROS = 416;
     public static final int INSURANCE_GLOBAL_SEGUROS = 415;
 
+    public static final String DB_LUANDA = "jdbc/CligestSI";
+    public static final String DB_VIANA = "jdbc/CligestSI_VIANA";
+    public static final String DB_CMU = "jdbc/CligestSI_CMU";
+    public static final String DB_ZANGO = "jdbc/CligestSI_ZANGO";
+
     private Context initContext;
     private DataSource ds;
     private Connection dbCon;
 
     private static List<String> memIIsList = new ArrayList<String>();
 
-    public DatabaseLib() throws Exception {
+    public DatabaseLib(String datasource) throws Exception {
         try {
             initContext = new InitialContext();
             Context webContext = (Context) initContext.lookup("java:/comp/env");
 
-            ds = (DataSource) webContext.lookup("jdbc/CligestSI");
+            ds = (DataSource) webContext.lookup(datasource);
             dbCon = ds.getConnection();
         } catch (Exception e) {
             throw new Exception(e.getMessage());
@@ -83,7 +88,7 @@ public class DatabaseLib {
         return result;
     }
 
-    public void validateVars (long entidade, String data) throws Exception {
+    private void validateVars (long entidade, String data) throws Exception {
         if (data.length() != 10) {
             throw new Exception("Input vars validation failed: Date field is malformed.");
         }
