@@ -9,3 +9,52 @@ Segue as especificações dos campos a serem preenchidos automaticamente pelo We
 - SQL Server - DB CligestSI - Tabela [Registo FE] - Campo [Operador] - Type Char 100 - Deve ser colocado o Nome do Operador que gerou a Elegibilidade
 
 Para o primeiro caso é fácil carregar o número de cartão com base no número de processo, para os outros, tem que ser corrido um comando que compare os registos antes de ser carregada a respectiva eligibilidade.
+
+
+
+
+
+
+
+
+
+
+
+
+    <Resource name="jdbc/CligestSI" auth="Container" type="javax.sql.DataSource"
+               maxTotal="200" maxIdle="30" maxWaitMillis="10000"
+               username="sihcligest" password="Hello12345" driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+               url="jdbc:sqlserver://192.168.100.14\AOLDAFSR01:1433;database=CligestSI"/>
+
+    <Resource name="jdbc/CligestSI_CMU" auth="Container" type="javax.sql.DataSource"
+          maxTotal="200" maxIdle="30" maxWaitMillis="10000"
+          username="sihcligest" password="Hello12345" driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+          url="jdbc:sqlserver://192.168.180.15\AOLDAFSR01:1433;database=CligestSI"/>
+
+    <Resource name="jdbc/CligestSI_VIANA" auth="Container" type="javax.sql.DataSource"
+          maxTotal="200" maxIdle="30" maxWaitMillis="10000"
+          username="sihcligest" password="Hello12345" driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+          url="jdbc:sqlserver://192.168.130.14\AOLDAFSR01:1433;database=CligestSI"/>
+
+    <Resource name="jdbc/CligestSI_ZANGO" auth="Container" type="javax.sql.DataSource"
+          maxTotal="200" maxIdle="30" maxWaitMillis="10000"
+          username="sihcligest" password="Hello12345" driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+          url="jdbc:sqlserver://192.168.110.11\AOZNGAPP01:1433;database=CligestSI"/>
+
+    <Resource name="jdbc/CligestSI_BENFICA" auth="Container" type="javax.sql.DataSource"
+          maxTotal="200" maxIdle="30" maxWaitMillis="10000"
+          username="sihcligest" password="Hello12345" driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+          url="jdbc:sqlserver://192.168.190.22\AOBFCCLINICA:1433;database=CligestSI"/>
+
+    <Resource name="jdbc/CligestSI_PANGUILA" auth="Container" type="javax.sql.DataSource"
+          maxTotal="200" maxIdle="30" maxWaitMillis="10000"
+          username="sihcligest" password="Hello12345" driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+          url="jdbc:sqlserver://192.168.170.10\AOPANGDC01:1433;database=CligestSI"/>
+
+    <Resource name="jdbc/CligestSI_CABINDA" auth="Container" type="javax.sql.DataSource"
+                    maxTotal="200" maxIdle="30" maxWaitMillis="10000"
+                    username="sihcligest" password="Hello12345" driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+                    url="jdbc:sqlserver://192.168.130.10\AOCBAAPP01:1433;database=CligestSI"/>
+
+
+                    Avennida:

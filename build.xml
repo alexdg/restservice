@@ -1,0 +1,58 @@
+<project name="remote_deployment_test" default="create-war-file">
+
+    <!-- Configure the directory into which the web application is built -->
+    <property name="dist"    value="dist" />
+
+    <!-- Configure the name of the web content directory -->
+    <property name="web.content"     value="WebContent" />
+
+
+    <!-- Configure the name of the WAR filename -->
+    <property name="war.filename"     value="delta.war" />
+
+    <!-- Configure the context path for this application -->
+    <property name="path"     value="/delta" />
+
+    <!-- Configure properties to access the Manager application -->
+    <property name="url"      value="https://192.168.100.25:8444/manager" />
+    <property name="username" value="tomcat" />
+    <property name="password" value="megatron321_" />
+
+    <!-- Configure the custom Ant tasks for the Manager application -->
+    <taskdef name="deploy"    classname="org.apache.catalina.ant.DeployTask" />
+    <taskdef name="list"      classname="org.apache.catalina.ant.ListTask" />
+    <taskdef name="reload"    classname="org.apache.catalina.ant.ReloadTask" />
+    <taskdef name="resources" classname="org.apache.catalina.ant.ResourcesTask" />
+    <taskdef name="start"     classname="org.apache.catalina.ant.StartTask" />
+    <taskdef name="stop"      classname="org.apache.catalina.ant.StopTask" />
+    <taskdef name="undeploy"  classname="org.apache.catalina.ant.UndeployTask" />
+
+    <target name="setup" description="Setup supporting directories">
+        <mkdir dir="${dist}" />
+    </target>
+
+    <!-- Executable Targets -->
+    <target name="create-war-file" description="Create the WAR file" depends="setup">
+        <jar destfile="${dist}/${war.filename}" basedir="${web.content}" />
+    </target>
+
+    <target name="deploy" description="Deploy web application"
+            depends="create-war-file">
+        <deploy url="${url}" username="${username}" password="${password}"
+                path="${path}" war="file:${dist}/${war.filename}" />
+    </target>
+
+    <target name="undeploy" description="Remove web application">
+        <undeploy url="${url}" username="${username}" password="${password}"
+                  path="${path}" />
+    </target>
+
+    <target name="reload" description="Reload web application">
+        <reload  url="${url}" username="${username}" password="${password}"
+                 path="${path}" />
+    </target>
+
+    <target name="list" description="List deployed web applications">
+        <list url="${url}" username="${username}" password="${password}" />
+    </target>
+</project>

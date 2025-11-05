@@ -4,6 +4,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * sshpass -p bigtimer34 scp alexd@192.168.100.53:/f\:/code/rest-service/target/rest-service-cligestsi.war /usr/local/tomcat/webapps/cligestsi.war
+ */
+
 @RestController
 public class CligestRestController {
 
@@ -26,5 +30,11 @@ public class CligestRestController {
     @GetMapping("/memidreader")
     public MemIDReader memIDReader(@RequestParam(value = "memid", defaultValue = "0") String memid) {
         return new MemIDReader(memid);
+    }
+
+    @GetMapping("/utenteid")
+    public UtenteID utenteid(@RequestParam(value = "name", defaultValue = "") String name,
+                             @RequestParam(value = "birthdate", defaultValue = "") String birthdate) {
+        return new UtenteID(name, birthdate);
     }
 }
